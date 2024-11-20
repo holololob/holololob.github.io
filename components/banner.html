@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>배너배너</title>
   </head>
   <body>
     <section class="cont_main area_banner">
       <div class="area_visual">
         <video class="background-video" autoplay muted loop>
-          <source src="./assets/videos/bg_banner.mp4" type="video/mp4" />
+          <source src="../assets/videos/bg_banner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="inner_top">
@@ -24,22 +24,93 @@
         <a href="https://www.youtube.com/watch?v=pyg5BWzpy5Y" target="_blank">더 알아보기</a>
       </div>
       <div class="area_widget">
-        <div>
-          slick-slider 라이브러리 찾아보기 <br />
-          https://programmer93.tistory.com/34
-        </div>
         <div class="inner_widget first_widget">
-          <div class="widget_slide">
-            <a href="https://www.kakaocorp.com/page/detail/11302" target="_self"></a>
-            <img src="../assets/img/img_banner_wallpaper2025.webp" alt="2025 카카오 점자달력" />
-          </div>
-          <div class="widget_slide"></div>
-          <div class="widget_slide">
-            <a href="https://techforimpact.io/" target="_self"></a>
-            <img src="../assets/img/img_banner_kakaoImpact.webp" alt="카카오임팩트" />
+          <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/img/img_banner_wallpaper2025.webp"
+                  alt="2025 카카오 점자달력"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <div class="inner_count">
+                  <span sub_count>기부에 함께 해주신 착한 마음들</span>
+                  <div><strong class="number_count"></strong>50,000,000<span class="text_count">건</span></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img_banner_kakaoImpact.webp" class="d-block w-100" alt="카카오임팩트" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="inner_widget second_widget"></div>
+        <div class="inner_widget second_widget">
+          <div id="widget_slide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#widget_slide"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button type="button" data-bs-target="#widget_slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#widget_slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="inner_second">
+                  <span class="badge_second type_black">다양성의 가치</span>
+                  <strong class="title_second">
+                    2023 <br />
+                    카카오 다양성 보고서
+                  </strong>
+                  <div class="wrap_tags">
+                    <span class="item_tag">#다양성</span>
+                    <span class="item_tag">#건강한디지털</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="inner_second">
+                  <span class="badge_second type_yellow">디지털 격차 줄이기</span>
+                  <strong class="title_second">
+                    어르신을 위한 <br />
+                    개인정보보호 안내
+                  </strong>
+                  <div class="wrap_tags">
+                    <span class="item_tag">#기술복지</span>
+                    <span class="item_tag">#피싱범죄예방</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="inner_second">
+                  <span class="badge_second type_yellow">카톡설명서</span>
+                  <strong class="title_second">
+                    모두의 카톡을 <br />
+                    더 가깝고 안전하게
+                  </strong>
+                  <div class="wrap_tags">
+                    <span class="item_tag">#업데이트소식</span>
+                    <span class="item_tag">#톡활용팁</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="inner_widget third_widget"></div>
       </div>
     </section>
